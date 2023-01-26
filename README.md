@@ -40,3 +40,4 @@ This repo contains my study notes and learning projects contained in the course 
   float xValue = Input.GetAxis("Horizontal");  // (old Input System) could use xValue/yValue to do transform
   float yValue = Input.GetAxis("Vertical");
   ```
+- `Time.deltaTime` => frame rate independent
