@@ -62,3 +62,8 @@ This repo contains my study notes and learning projects contained in the course 
     }
     ```
     (attach ObjectHit script to the Wall object)
+- GetComponent<>() method => get/set the wanted components
+
+  ```
+  GetComponent<MeshRenderer>().material.color = Color.red;
+  ```
