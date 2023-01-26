@@ -65,5 +65,7 @@ This repo contains my study notes and learning projects contained in the course 
 - GetComponent<>() method => get/set the wanted components
 
   ```
-  GetComponent<MeshRenderer>().material.color = Color.red;
+  GetComponent<MeshRenderer>().material.color = Color.black;
   ```
+
+- Timer.time => get the time elapsed from the starting of the game to current frame
