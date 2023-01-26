@@ -51,3 +51,14 @@ This repo contains my study notes and learning projects contained in the course 
   1. check the Box Collider option for items that need to handle collision
   2. add Rigidbody component to Player object
   3. add some constraints on position/rotation to the rigid body of player object
+  - OnCollisionEnter() callback method would be called every time the attached object gets hit
+    ```
+    public class ObjectHit : MonoBehaviour
+    {
+        private void OnCollisionEnter(Collision other)
+        {
+            Debug.Log("Bumped into a wall");
+        }
+    }
+    ```
+    (attach ObjectHit script to the Wall object)
