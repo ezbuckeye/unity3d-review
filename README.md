@@ -41,3 +41,9 @@ This repo contains my study notes and learning projects contained in the course 
   float yValue = Input.GetAxis("Vertical");
   ```
 - `Time.deltaTime` => frame rate independent
+- use Cinemachine to follow an object
+  1. Install Cinimachine from Package Manager
+  2. Add Cinimachine Brain component to camera
+  3. Add Virtual Camera and rename
+  4. Point the Virtual Camera to follow the player (set Body->Framing Transposer, set Follow->target object)
+  5. Tune distance
