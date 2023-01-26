@@ -34,3 +34,5 @@ This repo contains my study notes and learning projects contained in the course 
       }
   }
   ```
+
+- `[SerializeField] float x = 0.1f;` => could edit the x field more easily in Unity Editor
