@@ -47,3 +47,7 @@ This repo contains my study notes and learning projects contained in the course 
   3. Add Virtual Camera and rename
   4. Point the Virtual Camera to follow the player (set Body->Framing Transposer, set Follow->target object)
   5. Tune distance
+- Basic Collision
+  1. check the Box Collider option for items that need to handle collision
+  2. add Rigidbody component to Player object
+  3. add some constraints on position/rotation to the rigid body of player object
