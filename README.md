@@ -71,3 +71,17 @@ This repo contains my study notes and learning projects contained in the course 
   ```
 
 - Time.time => get the time elapsed from the starting of the game to current frame
+
+- tag
+
+  ```
+  private void OnCollisionEnter(Collision other)
+  {
+      if (other.gameObject.tag == "Player")
+      {
+          // Debug.Log("Bumped into a wall");
+          GetComponent<MeshRenderer>().material.color = Color.black;
+          this.gameObject.tag = "Hit";
+      }
+  }
+  ```
