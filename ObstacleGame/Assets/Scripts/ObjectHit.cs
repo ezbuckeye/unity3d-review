@@ -9,7 +9,7 @@ public class ObjectHit : MonoBehaviour
         if (other.gameObject.tag == "Player")
         {
             // Debug.Log("Bumped into a wall");
-            GetComponent<MeshRenderer>().material.color = Color.black;
+            GetComponent<MeshRenderer>().material.color = Color.cyan;
             gameObject.tag = "Hit";
         }
     }

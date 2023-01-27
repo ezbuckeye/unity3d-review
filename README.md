@@ -6,6 +6,8 @@ This repo contains my study notes and learning projects contained in the course 
 
 ![PlayAroundLab](./PlayAround.png)
 
+![ObstacleGame](./ObstacleGame1.png)
+
 ## Unity Notes
 
 ### PlayAroundLab
