@@ -6,7 +6,11 @@ public class ObjectHit : MonoBehaviour
 {
     private void OnCollisionEnter(Collision other) 
     {
-        // Debug.Log("Bumped into a wall");
-        GetComponent<MeshRenderer>().material.color = Color.black;
+        if (other.gameObject.tag == "Player")
+        {
+            // Debug.Log("Bumped into a wall");
+            GetComponent<MeshRenderer>().material.color = Color.black;
+            gameObject.tag = "Hit";
+        }
     }
 }

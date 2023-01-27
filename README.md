@@ -65,7 +65,9 @@ This repo contains my study notes and learning projects contained in the course 
 - GetComponent<>() method => get/set the wanted components
 
   ```
-  GetComponent<MeshRenderer>().material.color = Color.black;
+  GetComponent<MeshRenderer>().material.color = Color.black;  // return type => MeshRenderer
+  GetComponent<MeshRenderer>().enabled = false; // make the attached game Object disappear
+  GetComponent<Rigidbody>.useGravity = false; // disable the gravity functionality
   ```
 
-- Timer.time => get the time elapsed from the starting of the game to current frame
+- Time.time => get the time elapsed from the starting of the game to current frame
