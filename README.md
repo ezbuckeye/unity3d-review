@@ -55,7 +55,7 @@ This repo contains my study notes and learning projects contained in the course 
   4. Point the Virtual Camera to follow the player (set Body->Framing Transposer, set Follow->target object)
   5. Tune distance
 - Basic Collision
-  1. check the Box Collider option for items that need to handle collision
+  1. check the Box Collider component option for items that need to handle collision
   2. add Rigidbody component to Player object
   3. add some constraints on position/rotation to the rigid body of player object
   - OnCollisionEnter() callback method would be called every time the attached object gets hit
@@ -75,6 +75,7 @@ This repo contains my study notes and learning projects contained in the course 
   GetComponent<MeshRenderer>().material.color = Color.black;  // return type => MeshRenderer
   GetComponent<MeshRenderer>().enabled = false; // make the attached game Object disappear
   GetComponent<Rigidbody>.useGravity = false; // disable the gravity functionality
+  GetComponent<Rigidbody>.AddRelativeForce(Vector3.up * mainThrust * Time.deltaTime); // add a force to the attaching object
   ```
 
 - Time.time => get the time elapsed from the starting of the game to current frame
@@ -98,6 +99,13 @@ This repo contains my study notes and learning projects contained in the course 
 - we could ajust gravity, which identified as a Vector3 in unity, in Project Settings -Physics -Gravity.
 
 - Audio
+
   - add Audio Listener component to the Main Camera
   - add Audio Source component to an object
   - attach an audio source file as the Audio Clip of the Audio Source
+
+- Control Audio
+  `AudioSource audioSource = GetComponent<AudioSource>();`
+  - check if the audio is playing: `audioSource.isPlaying; // a true/false property`
+  - play the sound: `audioSource.Play();`
+  - stop the sound: `audioSource.Stop();`
