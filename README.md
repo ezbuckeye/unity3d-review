@@ -92,3 +92,7 @@ This repo contains my study notes and learning projects contained in the course 
       }
   }
   ```
+
+### ProjectBoost
+
+- we could ajust gravity, which identified as a Vector3 in unity, in Project Settings -Physics -Gravity.
