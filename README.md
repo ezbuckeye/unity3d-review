@@ -96,3 +96,8 @@ This repo contains my study notes and learning projects contained in the course 
 ### ProjectBoost
 
 - we could ajust gravity, which identified as a Vector3 in unity, in Project Settings -Physics -Gravity.
+
+- Audio
+  - add Audio Listener component to the Main Camera
+  - add Audio Source component to an object
+  - attach an audio source file as the Audio Clip of the Audio Source
