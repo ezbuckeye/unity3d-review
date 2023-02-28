@@ -106,6 +106,20 @@ This repo contains my study notes and learning projects contained in the course 
 
 - Control Audio
   `AudioSource audioSource = GetComponent<AudioSource>();`
+
   - check if the audio is playing: `audioSource.isPlaying; // a true/false property`
   - play the sound: `audioSource.Play();`
   - stop the sound: `audioSource.Stop();`
+
+- Unity SceneManagement
+
+  - File -Build Settings -Add scenes to Scenes In Build
+  - use SceneManagement to respawn the game
+
+    - `using UnityEngine.SceneManagement;`
+    -
+
+    ```
+      int currentSceneIndex = SceneManager.GetActiveScene().buildIndex;
+      SceneManager.LoadScene(currentSceneIndex);
+    ```
