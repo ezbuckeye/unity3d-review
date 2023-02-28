@@ -112,14 +112,12 @@ This repo contains my study notes and learning projects contained in the course 
   - stop the sound: `audioSource.Stop();`
 
 - Unity SceneManagement
-
+  `using UnityEngine.SceneManagement;`
   - File -Build Settings -Add scenes to Scenes In Build
   - use SceneManagement to respawn the game
-
-    - `using UnityEngine.SceneManagement;`
-    -
-
     ```
       int currentSceneIndex = SceneManager.GetActiveScene().buildIndex;
       SceneManager.LoadScene(currentSceneIndex);
     ```
+  - use SceneManagement to get the total number of scene
+    - `int totalNumber = SceneManager.sceneCountInBuildSettings;`
