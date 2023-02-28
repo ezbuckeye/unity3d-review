@@ -113,6 +113,7 @@ This repo contains my study notes and learning projects contained in the course 
 
 - Unity SceneManagement
   `using UnityEngine.SceneManagement;`
+
   - File -Build Settings -Add scenes to Scenes In Build
   - use SceneManagement to respawn the game
     ```
@@ -121,3 +122,6 @@ This repo contains my study notes and learning projects contained in the course 
     ```
   - use SceneManagement to get the total number of scene
     - `int totalNumber = SceneManager.sceneCountInBuildSettings;`
+
+- Invoke method => delay the method calling after certain seconds
+  `Invoke("StartSuccessSequence", 1f);`
