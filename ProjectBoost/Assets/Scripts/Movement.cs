@@ -60,7 +60,7 @@ public class Movement : MonoBehaviour
             {
                 leftThrusterParticles.Play();
             }
-        }
+        } 
         else if(Input.GetKey(KeyCode.D))
         {
             ApplyRotation(-rotationThrust);
