@@ -137,6 +137,28 @@ This repo contains my study notes and learning projects contained in the course 
     - `int totalNumber = SceneManager.sceneCountInBuildSettings;`
 
 - Invoke method => delay the method calling after certain seconds
+
   ```
   Invoke("StartSuccessSequence", 1f);
+  ```
+
+- Prefab
+
+  1. if we edit the object created from Prefab, it wouldn't affect the Prefab / other objects created from Prefab
+  2. if we edit the Prefab, it would affect all the objects created from Prefab
+
+- Transform properties of child objects are relative to their parent objects
+
+- Particle System
+
+  - in the scene, do -effect -Particle Systems to create a new particle system
+  - in the code, e.g., a collision handler
+
+  ```
+  [SerializeField] ParticleSystem successParticles;
+
+  void SomeMethodTriggerredWhenColliding()
+  {
+    successParticles.Play();
+  }
   ```
