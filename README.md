@@ -111,7 +111,14 @@ This repo contains my study notes and learning projects contained in the course 
   ```
 
   - check if the audio is playing: `audioSource.isPlaying; // a true/false property`
-  - play the sound: `audioSource.Play();`
+  - play the sound: `audioSource.Play();  // have to attach a AudioClip instance in inspector in this case`
+  - play a specific sound
+    1. declare some serialize fields of type AudioClip in the Script, e.g.
+    ```
+    [SerielizeField] AudioClip success;
+    ```
+    2. declare a AudioSource field audioSource and initialize it in Start() method
+    3. use `audioSource.PlayOneShot(success);` to call the specified sound
   - stop the sound: `audioSource.Stop();`
 
 - Unity SceneManagement
